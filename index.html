@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/phrvuear/favicon.ico"><title>phrar_frontend</title><script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script><script src="./js/aframe-ar.js"></script><script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script><script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script><script>AFRAME.registerComponent('videohandler', {
+      init: function () {
+        var marker = this.el;
+        this.vid = document.querySelector("#vid");
+        this.vid.pause();
+
+        marker.addEventListener('markerFound', function () {
+          this.toggle = true;
+          this.vid.play();
+        }.bind(this));
+
+        marker.addEventListener('markerLost', function () {
+          this.toggle = false;
+          this.vid.pause();
+        }.bind(this));
+      },
+    });</script><link href="/phrvuear/js/about.3a6c75ef.js" rel="prefetch"><link href="/phrvuear/js/chunk-2d225f89.edfa7a07.js" rel="prefetch"><link href="/phrvuear/css/app.b229284b.css" rel="preload" as="style"><link href="/phrvuear/js/app.3356a307.js" rel="preload" as="script"><link href="/phrvuear/js/chunk-vendors.08093ec0.js" rel="preload" as="script"><link href="/phrvuear/css/app.b229284b.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but phrar_frontend doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/phrvuear/js/chunk-vendors.08093ec0.js"></script><script src="/phrvuear/js/app.3356a307.js"></script></body></html>
