@@ -6,6 +6,7 @@
     id="scene"
     embedded
     gesture-detector
+    style="width: 781px; height: 586px"
   >
     <a-assets>
       <video
@@ -14,7 +15,7 @@
         preload="auto"
         response-type="arraybuffer"
         loop
-        crossorigin="anonymous"
+        crossorigin
         webkit-playsinline
         autoplay
         playsinline
