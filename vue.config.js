@@ -5,6 +5,6 @@ module.exports = {
     host: "localhost",
   },
   publicPath: process.env.NODE_ENV === 'production'
-  ? '/phrar/'
+  ? '/phrvuear/'
   : '/'
 };
